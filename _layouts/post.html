@@ -6,4 +6,9 @@ layout: default
 
 <div class="post">
   {{ content }}
+
+  <!-- Post comments -->
+  <div class="postcomments">
+    {% include disqus.html %}
+  </div>
 </div>

@@ -3,7 +3,7 @@ layout: post
 title: "Breaking out of jail shells"
 date: 2016-10-24
 ---
-This is a quick doc on breaking out of jail/restricted shells.
+This is a quick post on breaking out of linux jail/restricted shells.
 
 * Always run your reconnaissance!
   * Run **env** to list out exported environment variables.
@@ -12,7 +12,7 @@ This is a quick doc on breaking out of jail/restricted shells.
   * Run some basic commands what is and isn\'t allowed? **ls,pwd,cp,mv,env,set,export,vi,\.\.\.**
   * Can you just exploit a running process to escalate privileges and not need to escape out of your shell?
 >
-* Wins from jail
+* Quick wins from jail
   * Can you run **cp**? Just copy a file into your path.
     * **`cp /bin/sh /a/dir/from/path; sh`**
   * Is \'/\' allowed?
@@ -34,7 +34,7 @@ This is a quick doc on breaking out of jail/restricted shells.
       * **ruby: `ruby exec "/bin/sh"`**
       * **lua: `lua os.execute('/bin/sh')`**
 >
-* Wins from outside jail
+* Quick wins from outside jail
   * Just execute commands before your shell is loaded.
     * **`ssh user@10.10.10.10 -t "/bin/sh"`**
   * Don\'t start the rc profile
