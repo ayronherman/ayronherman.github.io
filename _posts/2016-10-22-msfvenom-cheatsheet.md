@@ -6,12 +6,12 @@ date: 2016-10-22
 Here are simple msfvenom commands to help in quick payload generation.  
 
 I love the msfvenom aliases that g0tmi1k setup in his [os-scripts](https://github.com/g0tmi1k/os-scripts). These will help in finding the correct payloads, encoders, and formats.  
-Place these aliases in ~/.bash_aliases:
->**`alias msfvenom-list-all='cat ~/.msf4/msfvenom/all'`**  
->**`alias msfvenom-list-nops='cat ~/.msf4/msfvenom/nops'`**  
->**`alias msfvenom-list-payloads='cat ~/.msf4/msfvenom/payloads'`**  
->**`alias msfvenom-list-encoders='cat ~/.msf4/msfvenom/encoders'`**  
->**`alias msfvenom-list-formats='cat ~/.msf4/msfvenom/formats'`**  
+Place these aliases in ~/.bash_aliases:  
+> **`alias msfvenom-list-all='cat ~/.msf4/msfvenom/all'`**  
+> **`alias msfvenom-list-nops='cat ~/.msf4/msfvenom/nops'`**  
+> **`alias msfvenom-list-payloads='cat ~/.msf4/msfvenom/payloads'`**  
+> **`alias msfvenom-list-encoders='cat ~/.msf4/msfvenom/encoders'`**  
+> **`alias msfvenom-list-formats='cat ~/.msf4/msfvenom/formats'`**  
 
 Finish the setup by running the following:
 > **`mkdir -p ~/.msf4/msfvenom/`**  
