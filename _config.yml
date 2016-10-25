@@ -1,4 +1,6 @@
 name: Ayron Herman, Rambilings
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
-theme: minima
+
+kramdown:
+  input: GFM
