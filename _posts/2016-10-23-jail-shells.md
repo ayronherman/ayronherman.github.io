@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Breaking out of jail shells"
-date: 2016-10-24
+date: 2016-10-23
 ---
 This is a quick post on breaking out of linux jail/restricted shells.
 
