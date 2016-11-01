@@ -22,7 +22,7 @@ Finish the setup by running the following:
 > **`msfvenom --list nops > ~/.msf4/msfvenom/nops`**  
 > **`msfvenom --list payloads > ~/.msf4/msfvenom/payloads`**  
 > **`msfvenom --list encoders > ~/.msf4/msfvenom/encoders`**  
-> **`msfvenom --help-formats > ~/.msf4/msfvenom/formats`**  
+> **`msfvenom --help-formats 2> ~/.msf4/msfvenom/formats`**  
 
 A basic msfvenom command.
 
