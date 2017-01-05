@@ -7,7 +7,6 @@ Here is how to build a pentest drop box using Kali on ODROID-C2 hardware. Im usi
 
 1. First download the ODROID-C2 image from the following URL:  
 https://www.offensive-security.com/kali-linux-arm-images/
-
 2.  Get the image onto the eMMC  
 On Mac
   * Use a tool like The Unarchiver to extract the .xz downloaded file.  
@@ -25,23 +24,23 @@ On Mac
       * `echo '/dev/mmcblk0p1 /boot auto defaults 0 0' >> /etc/fstab`
   * Create a script that copies the backup files back into /boot on start.  
       `nano /boot/backup/restore.sh`
-      ```
+      ~~~
       #!/bin/bash
       cp /boot/backup/Image /boot/
       cp /boot/backup/meson64_odroidc2.dtb /boot/
       cp /boot/backup/uInitrd /boot/
-      ```
+      ~~~
   * Set the script to executable and test it.
-      ```
+      ~~~
       chmod 755 /boot/backup/restore.sh
       /boot/backup/restore.sh
-      ```
+      ~~~
   * Run the script on rc.local  
   `nano /etc/rc.local`
         * Before `exit 0` place the following:  
         `/boot/backup/restore.sh`
 4. Expand the filesystem to use the whole eMMC  
-```
+~~~
 fdisk /dev/mmcblk0
 d                               #delete a partition
 2                               #select partition 2
@@ -53,7 +52,7 @@ Accept default Last sector      #The end sector
 w                               #write the changes
 reboot                          #reboot
 resize2fs /dev/mmcblk0p2        #grow the partition
-```
+~~~
 5. Upgrade the OS. Change passwords and regenerate ssh keys.  
 
-The pentest drop box is ready for some customization. This would include getting wifi working, autossh, and other naughty things. 
+The pentest drop box is ready for some customization. This would include getting wifi working, autossh, and other naughty things.
