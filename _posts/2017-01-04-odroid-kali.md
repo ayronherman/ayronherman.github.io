@@ -24,14 +24,15 @@ On Mac
       * `echo '/dev/mmcblk0p1 /boot auto defaults 0 0' >> /etc/fstab`
   * Create a script that copies the backup files back into /boot on start.  
       `nano /boot/backup/restore.sh`
-      ~~~
+      ~~~ bash
       #!/bin/bash
       cp /boot/backup/Image /boot/
       cp /boot/backup/meson64_odroidc2.dtb /boot/
       cp /boot/backup/uInitrd /boot/
       ~~~
+
   * Set the script to executable and test it.
-      ~~~
+      ~~~ bash
       chmod 755 /boot/backup/restore.sh
       /boot/backup/restore.sh
       ~~~
@@ -40,7 +41,7 @@ On Mac
         * Before `exit 0` place the following:  
         `/boot/backup/restore.sh`
 4. Expand the filesystem to use the whole eMMC  
-~~~
+~~~ bash
 fdisk /dev/mmcblk0
 d                               #delete a partition
 2                               #select partition 2
