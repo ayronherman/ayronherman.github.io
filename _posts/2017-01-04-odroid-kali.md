@@ -35,8 +35,8 @@ On Mac
   * Set the script to executable and test it.
 
       ```
-      chmod 755 /boot/backup/restore.sh
-      /boot/backup/restore.sh
+      chmod 755 /boot/backup/restore.sh  
+      /boot/backup/restore.sh  
       ```
 
   * Run the script on rc.local  
