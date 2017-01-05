@@ -24,6 +24,7 @@ On Mac
       * `echo '/dev/mmcblk0p1 /boot auto defaults 0 0' >> /etc/fstab`
   * Create a script that copies the backup files back into /boot on start.  
       `nano /boot/backup/restore.sh`
+
       ```
       #!/bin/bash
       cp /boot/backup/Image /boot/
@@ -32,28 +33,32 @@ On Mac
       ```
 
   * Set the script to executable and test it.
+
       ```
       chmod 755 /boot/backup/restore.sh
       /boot/backup/restore.sh
       ```
+
   * Run the script on rc.local  
   `nano /etc/rc.local`
         * Before `exit 0` place the following:  
         `/boot/backup/restore.sh`
 4. Expand the filesystem to use the whole eMMC  
-```
-fdisk /dev/mmcblk0
-d                               #delete a partition
-2                               #select partition 2
-n                               #new partition
-p                               #primary partition
-2                               #partition number 2
-Accept default First sector     #The start sector
-Accept default Last sector      #The end sector
-w                               #write the changes
-reboot                          #reboot
-resize2fs /dev/mmcblk0p2        #grow the partition
-```
+
+  ```
+  fdisk /dev/mmcblk0
+  d                               #delete a partition
+  2                               #select partition 2
+  n                               #new partition
+  p                               #primary partition
+  2                               #partition number 2
+  Accept default First sector     #The start sector
+  Accept default Last sector      #The end sector
+  w                               #write the changes
+  reboot                          #reboot
+  resize2fs /dev/mmcblk0p2        #grow the partition
+  ```
+
 5. Upgrade the OS. Change passwords and regenerate ssh keys.  
 
 The pentest drop box is ready for some customization. This would include getting wifi working, autossh, and other naughty things.
