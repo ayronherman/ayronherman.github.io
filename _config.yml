@@ -1,11 +1,2 @@
 name: Ayron Herman, Rambilings
-markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
-lsi: false
-safe: true
-incremental: false
-gist:
- noscript: false
-gems:
- - jekyll-coffeescript
- - jekyll-paginate
