@@ -4,13 +4,8 @@ permalink: /blog/:year/:month/:day/:title.html
 lsi: false
 safe: true
 incremental: false
-highlighter: rouge
 gist:
  noscript: false
-kramdown:
- math_engine: mathjax
- input: GFM
- hard_wrap: false
 gems:
  - jekyll-coffeescript
  - jekyll-paginate
