@@ -2,7 +2,6 @@
 layout: post
 title: "The msfvenom cheat sheet"
 date: 2016-10-22
-permalink: /blog/:year/:month/:day/:title.html
 ---
 Here are simple msfvenom commands to help in quick payload generation.  
 
