@@ -25,12 +25,12 @@ On Mac
   * Create a script that copies the backup files back into /boot on start.  
       `nano /boot/backup/restore.sh`
 
-      ```
+      {% highlight bash %}
       #!/bin/bash
       cp /boot/backup/Image /boot/
       cp /boot/backup/meson64_odroidc2.dtb /boot/
       cp /boot/backup/uInitrd /boot/
-      ```
+      {% endhighlight %}
 
   * Set the script to executable and test it.
 
