@@ -17,7 +17,7 @@ title: Rambilings
 email: ayronherman@gmail.com
 description: >
   Just a simple blog for infosec.
-baseurl: ""
+baseurl: "/"
 url: "http://hermanshole.com"
 twitter_username: ayronherman
 github_username:  ayronherman
