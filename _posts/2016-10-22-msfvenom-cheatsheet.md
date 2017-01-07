@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: default
 title: "The msfvenom cheat sheet"
-date: 2016-10-22
 ---
 Here are simple msfvenom commands to help in quick payload generation.  
 
