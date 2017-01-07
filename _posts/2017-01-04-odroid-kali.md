@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: default
 title: "Setting up Kali on a ODROID-C2"
-date: 2017-01-06
 ---
 Here is how to build a pentest drop box using Kali on ODROID-C2 hardware. Im using an eMMC so this will be for that type of storage.
 
