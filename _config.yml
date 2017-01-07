@@ -20,7 +20,7 @@ description: Just a simple blog for infosec.
 url: "http://hermanshole.com"
 twitter_username: ayronherman
 github_username:  ayronherman
-permalink: /blog/:year/:month/:day/:title.html
+#permalink: /blog/:year/:month/:day/:title.html
 
 # Build settings
 markdown: kramdown
