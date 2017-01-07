@@ -13,7 +13,6 @@ theme: jekyll-theme-minimal
 gems:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-github-metadata
 exclude:
   - Gemfile
   - Gemfile.lock
