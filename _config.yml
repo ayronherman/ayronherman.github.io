@@ -25,7 +25,7 @@ permalink: /blog/:title.html
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+theme: jekyll-theme-tactile
 gems:
   - jekyll-feed
 exclude:
