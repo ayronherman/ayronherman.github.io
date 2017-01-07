@@ -3,7 +3,7 @@ email: ayronherman@gmail.com
 description: The abyss of some netsec info.
 baseurl: ""
 url: "http://hermanshole.com"
-github.owner_name: Ayron Herman
+repository: ayronherman
 show_downloads: true
 google_analytics: UA-86131644-1
 permalink: /blog/:title.html
