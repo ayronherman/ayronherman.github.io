@@ -2,7 +2,7 @@ title: Herman's Hole
 email: inbox@hermanshole.com
 description: The abyss of some netsec info.
 baseurl: ""
-url: "http://www.hermanshole.com"
+url: "https://ayronherman.github.io"
 show_downloads: false
 google_analytics: UA-86131644-1
 permalink: /blog/:title.html
