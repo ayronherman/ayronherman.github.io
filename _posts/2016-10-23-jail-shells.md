@@ -54,4 +54,4 @@ Getting creative
   * Execute lines that should be written to your file
   * Log out and back in again.
 
-Looking for more ways? [Google](http://bfy.tw/8Lq2)
+Looking for more ways? [Check out this resource here!](http://bfy.tw/8Lq2)
